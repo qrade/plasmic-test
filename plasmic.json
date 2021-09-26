@@ -42,7 +42,18 @@
         }
       ],
       "icons": [],
-      "images": [],
+      "images": [
+        {
+          "id": "li3IX-z3-",
+          "name": "finestra.jpg",
+          "filePath": "../public/plasmic/blank_project_mobile_first/images/finestrajpg.jpeg"
+        },
+        {
+          "id": "nzRRjS_1c",
+          "name": "finestra-maniglia.jpg",
+          "filePath": "../public/plasmic/blank_project_mobile_first/images/finestraManigliajpg.jpeg"
+        }
+      ],
       "codeComponents": [],
       "projectApiToken": "9N7DFnLRsEiFbqvZE21UhOCwMaMEInY8bS4jf3v9fAyWrR3Oq5DB321U5MBCwvoB54VYgJY6Au7tAHgQdg"
     }

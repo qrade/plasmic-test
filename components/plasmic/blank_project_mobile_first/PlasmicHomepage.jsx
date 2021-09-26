@@ -67,16 +67,44 @@ function PlasmicHomepage__RenderFunc(props) {
             data-plasmic-name={"freeBox"}
             data-plasmic-override={overrides.freeBox}
             className={classNames(defaultcss.all, sty.freeBox)}
-          />
+          >
+            <div
+              data-plasmic-name={"text"}
+              data-plasmic-override={overrides.text}
+              className={classNames(
+                defaultcss.all,
+                defaultcss.__wab_text,
+                sty.text
+              )}
+            >
+              {"Look ma! No code"}
+            </div>
+          </div>
 
           <div
             data-plasmic-name={"columns"}
             data-plasmic-override={overrides.columns}
             className={classNames(defaultcss.all, sty.columns)}
           >
-            <div className={classNames(defaultcss.all, sty.column__aesW)} />
+            <div className={classNames(defaultcss.all, sty.column__aesW)}>
+              <img
+                alt={""}
+                className={classNames(defaultcss.img, sty.img__yk6H)}
+                src={
+                  "/plasmic/blank_project_mobile_first/images/finestrajpg.jpeg"
+                }
+              />
+            </div>
 
-            <div className={classNames(defaultcss.all, sty.column__bKoew)} />
+            <div className={classNames(defaultcss.all, sty.column__bKoew)}>
+              <img
+                alt={""}
+                className={classNames(defaultcss.img, sty.img__qMplK)}
+                src={
+                  "/plasmic/blank_project_mobile_first/images/finestraManigliajpg.jpeg"
+                }
+              />
+            </div>
           </div>
         </div>
       </div>
@@ -85,8 +113,9 @@ function PlasmicHomepage__RenderFunc(props) {
 }
 
 const PlasmicDescendants = {
-  root: ["root", "freeBox", "columns"],
-  freeBox: ["freeBox"],
+  root: ["root", "freeBox", "text", "columns"],
+  freeBox: ["freeBox", "text"],
+  text: ["text"],
   columns: ["columns"]
 };
 
@@ -122,6 +151,7 @@ export const PlasmicHomepage = Object.assign(
   {
     // Helper components rendering sub-elements
     freeBox: makeNodeComponent("freeBox"),
+    text: makeNodeComponent("text"),
     columns: makeNodeComponent("columns"),
     // Metadata about props expected for PlasmicHomepage
     internalVariantProps: PlasmicHomepage__VariantProps,

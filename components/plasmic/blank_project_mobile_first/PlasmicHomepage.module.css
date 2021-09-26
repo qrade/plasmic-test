@@ -16,6 +16,13 @@
 }
 .text {
   position: relative;
+  color: #535353;
+}
+.button {
+  position: relative;
+  width: 208px;
+  align-self: center;
+  background: #63cfff;
 }
 .columns {
   display: flex;

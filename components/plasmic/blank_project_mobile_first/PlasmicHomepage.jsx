@@ -81,6 +81,20 @@ function PlasmicHomepage__RenderFunc(props) {
             </div>
           </div>
 
+          <button
+            data-plasmic-name={"button"}
+            data-plasmic-override={overrides.button}
+            className={classNames(
+              defaultcss.button,
+              defaultcss.__wab_text,
+              sty.button
+            )}
+            disabled={false}
+            onClick={'alert("ciao");'}
+          >
+            {"Click Me"}
+          </button>
+
           <div
             data-plasmic-name={"columns"}
             data-plasmic-override={overrides.columns}
@@ -113,9 +127,10 @@ function PlasmicHomepage__RenderFunc(props) {
 }
 
 const PlasmicDescendants = {
-  root: ["root", "freeBox", "text", "columns"],
+  root: ["root", "freeBox", "text", "button", "columns"],
   freeBox: ["freeBox", "text"],
   text: ["text"],
+  button: ["button"],
   columns: ["columns"]
 };
 
@@ -152,6 +167,7 @@ export const PlasmicHomepage = Object.assign(
     // Helper components rendering sub-elements
     freeBox: makeNodeComponent("freeBox"),
     text: makeNodeComponent("text"),
+    button: makeNodeComponent("button"),
     columns: makeNodeComponent("columns"),
     // Metadata about props expected for PlasmicHomepage
     internalVariantProps: PlasmicHomepage__VariantProps,
